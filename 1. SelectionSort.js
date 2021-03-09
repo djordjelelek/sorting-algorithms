@@ -1,5 +1,5 @@
 const selectionSort = (arr) => {
-  for (let x = 0; x < arr.length; x++) {
+  for (let x = 0; x < arr.length - 1; x++) {
     let num = x;
     for (let y = x + 1; y < arr.length; y++) {
       if (arr[y] < arr[num]) num = y;
