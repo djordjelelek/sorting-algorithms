@@ -1,12 +1,12 @@
 const selectionSort = (arr) => {
-  for (let x = 0; x < arr.length - 1; x++) {
-    let num = x;
-    for (let y = x + 1; y < arr.length; y++) {
-      if (arr[y] < arr[num]) num = y;
+  for (let i = 0; i < arr.length - 1; i++) {
+    let num = i;
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[j] < arr[num]) num = j;
     }
     let temp = arr[num];
-    arr[num] = arr[x];
-    arr[x] = temp;
+    arr[num] = arr[i];
+    arr[i] = temp;
   }
   return arr;
 };
